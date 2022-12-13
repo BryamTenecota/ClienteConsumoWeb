@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://sv/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://sv/">
+
+<xs:element name="alturamaxima" type="tns:alturamaxima"/>
+
+<xs:element name="alturamaximaResponse" type="tns:alturamaximaResponse"/>
+
+<xs:element name="desplazamiento" type="tns:desplazamiento"/>
+
+<xs:element name="desplazamientoResponse" type="tns:desplazamientoResponse"/>
+
+<xs:element name="diccionario" type="tns:diccionario"/>
+
+<xs:element name="diccionarioResponse" type="tns:diccionarioResponse"/>
+
+<xs:element name="gravitacionuniversal" type="tns:gravitacionuniversal"/>
+
+<xs:element name="gravitacionuniversalResponse" type="tns:gravitacionuniversalResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="operaciones" type="tns:operaciones"/>
+
+<xs:element name="operacionesResponse" type="tns:operacionesResponse"/>
+
+<xs:element name="parimpar" type="tns:parimpar"/>
+
+<xs:element name="parimparResponse" type="tns:parimparResponse"/>
+
+<xs:element name="potencia" type="tns:potencia"/>
+
+<xs:element name="potenciaResponse" type="tns:potenciaResponse"/>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="contraseña" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="alturamaxima">
+<xs:sequence>
+<xs:element name="velocidad" type="xs:double"/>
+<xs:element name="angulo" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="alturamaximaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operaciones">
+<xs:sequence>
+<xs:element name="numero1" type="xs:double"/>
+<xs:element name="numero2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operacionesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="diccionario">
+<xs:sequence>
+<xs:element name="palabra" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="diccionarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="parimpar">
+<xs:sequence>
+<xs:element name="numero" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="parimparResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="desplazamiento">
+<xs:sequence>
+<xs:element name="velocidad" type="xs:double"/>
+<xs:element name="tiempo" type="xs:double"/>
+<xs:element name="aceleracion" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="desplazamientoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="gravitacionuniversal">
+<xs:sequence>
+<xs:element name="masa1" type="xs:double"/>
+<xs:element name="masa2" type="xs:double"/>
+<xs:element name="distancia" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="gravitacionuniversalResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="potencia">
+<xs:sequence>
+<xs:element name="base" type="xs:double"/>
+<xs:element name="exponente" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="potenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
